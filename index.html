@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Pitch Detector</title>
+		<link href='http://fonts.googleapis.com/css?family=Alike' rel='stylesheet' type='text/css'>
+    </head>
+    <script src = './dist/jquery-3.5.1.min.js'></script>
+    <script src = './dist/index.js'></script>
+    
+    <style>
+        .frequency-text{
+            font-size:32pt;
+            padding: 0;
+            margin: 0;
+        }
+        .canvas{
+            margin-left: 8%;
+            width:90%;
+            height:1000px;
+            background-color: black;
+            position: absolute;
+        }
+        .canvas-spec {
+            margin-top:-100px;
+            margin-left: 18%;
+            width: 80%;
+            height: 100px;
+            background-color:midnightblue;
+            position: absolute;
+        }
+        .y-bar {
+            width: 8%;
+            margin: 0;
+            padding:0;
+            height:1000px;
+            background-color: black;
+            position: absolute;
+        }
+
+    </style>
+    </style>
+	<body>
+        <button id ="record">Click Here to Start Record</button>
+        <p id = "show-freq" class ="frequency-text">Hello Here</p>
+        <div>
+            <canvas width = "200" height="1000" class = "y-bar" id = "y_bar"></canvas>
+            <canvas class="canvas" id="my_canvas"></canvas>
+        </div>
+        <div>
+            <canvas class="canvas-spec" id="spec"></canvas>
+        </div>
+    </body>
+    <script>
+
+    </script>
+</html>
