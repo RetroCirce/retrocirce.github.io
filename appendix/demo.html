@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Large-scale Contrastive Language-Audio Petraining</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="config/bootstrap.min.css" />
+    <link rel="stylesheet" href="config/ionicons.css" />
+    <link rel="stylesheet" href="config/theme.css" />
+    <link rel="stylesheet" href="config/template3.css" />
+  </head>
+<body data-spy="scroll" data-target="#navbar1" data-offset="60">
+<div class="container-fluid" style="min-width:1300px;">
+    <div class="row">
+        <div class="col-12 p-0 bg-primary vh-40 py-5">
+            <div class="container" style="min-width:1300px;">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 py-2 text-light">
+                        <h2 class="display-5 mb-3">
+                            Large Scale Contrastive Language-Audio Pretraining <br> with Feature Fusion and Keyword-to-Caption Augmentation
+                        </h2>
+                        <p class="lead mb-3">
+                            In this page, we give additional introductions to our submission paper of ICASSP: <br>       
+                            (1) Some detail information of the proposed dataset LAION-Audio-630K, and training settings during the experiment stage. <br>
+                            (2) Some examples of keyword-to-caption augmentation by the T5 text generation model. <br>
+                            (3) Some additional experiments and analysis, which are not the main part of the paper but contributes to our conclusion. <br><br>
+                            Due to the page limit, we are not able to include above information in the paper. We appreciate the checking of this appendix page if reviewers find it avaiable and valuable to know more information about the submission.
+                            </vr>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary" id="navbar1">
+    <div class="container" style="min-width:1300px;">
+        <a class="navbar-brand mr-1 mb-1 mt-0" href="#">Appendix</a>
+    </div>  
+</nav> 
+<main>
+    <section id="synthesis demo" class="pb-1">
+        <div class="container" style="min-width:1300px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pb-1">
+                        <p class="lead text-primary"> 
+                            Details of LAION-Audio-630K
+                        </p>
+                    </div>        
+                    <hr class="my-1"/>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-md-12">
+                    <div class="card border-primary h-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            Regarding the section 2.1 and section 2.2 of the submisson: <br> 
+                            (1) We list the specifications of website/sources from which we collect the audio samples and text captions for LAION-Audio-630K in Table 1. <br>
+                            (2) We list the detail of three datasets in Table 2. We use the combination of them to train the model in the section 4 of the submission. <br>
+                            More details can be find at https://github.com/LAION-AI/audio-dataset/tree/main/laion-audio-630k.
+                            <div class="row w-75 text-center my-3 align-items-center mx-auto">
+                                <div class="col">
+                                    <figure class="figure">
+                                        <img src="files/dataset_detail.png" class="figure-img img-fluid rounded"  >
+                                        <figcaption class="figure-caption text-center">Table 1: the composition of the proposed dataset LAION-Audio-630K.</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <figure class="figure">
+                                        <img src="files/trainingset_detail.png" class="figure-img img-fluid rounded" >
+                                        <figcaption class="figure-caption text-center">Table 2: the detail of training datasets.</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                            Regarding the section 3.4 of the submissin, we present the distribution of audio length on Epidemic Sound and Freesound, as parts of LAION-Audio-630K, to demonstrate the existence of variable-length problem in audio data processing and model training.
+                            <div class="row w-75 text-center my-3 align-items-center mx-auto">
+                                <div class="col">
+                                    <figure class="figure">
+                                        <img src="files/epidemic_duration_list.png" class="figure-img img-fluid rounded"  >
+                                        <figcaption class="figure-caption text-center">Figure 1: the audio length distribution of Epidemic Sound.</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col">
+                                    <figure class="figure">
+                                        <img src="files/freesound_test_duration_list.png" class="figure-img img-fluid rounded" >
+                                        <figcaption class="figure-caption text-center">Figuer 2: the audio length distribution of Freesound.</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="synthesis demo" class="pb-1">
+        <div class="container" style="min-width:1300px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pb-1">
+                        <p class="lead text-primary"> 
+                            Examples of Keyword-to-Caption Augmentation
+                        </p>
+                    </div>        
+                    <hr class="my-1"/>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-md-12">
+                    <div class="card border-primary h-100">
+                        <div class="card-body d-flex flex-column align-items-start ">
+                            Regarding the section 3.5 of the submission, we show some examples of keyword-to-caption by T5 model from AudioSet labels. And the de-biased version for the model training. <br> 
+                            <div class="row w-75 text-center my-3 align-items-center mx-auto">
+                                <div class="col">
+                                    <figure class="figure">
+                                        <img src="files/k2c_example.png" class="figure-img img-fluid rounded"  >
+                                        <figcaption class="figure-caption text-center">Table 3: examples of keyword-to-caption augmentation from AudioSet labels and the de-biased version for the model training.</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="synthesis demo" class="pb-1">
+        <div class="container" style="min-width:1300px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pb-1">
+                        <p class="lead text-primary"> 
+                            Experiment Settings
+                        </p>
+                    </div>        
+                    <hr class="my-1"/>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-md-12">
+                    <div class="card border-primary h-100">
+                        <div class="card-body d-flex flex-column align-items-start ">
+                            Regarding the section 4.3 of the submission, We excluded all the overlap samples and perform zero-shot evaluation on the whole remaining dataset. The below table shows the detail of it. <br> 
+                            <div class="row w-50 text-center my-3 align-items-center mx-auto">
+                                <div class="col">
+                                    <figure class="figure">
+                                        <img src="files/dataset_overlap.png" class="figure-img img-fluid rounded"  >
+                                        <figcaption class="figure-caption text-center">Table 4: The overlaps between the training data and the zero-shot evaluation data, we excluded all these overlaps from the evalation sets to calculate the audio classification metrics.</figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="synthesis demo" class="pb-1">
+        <div class="container" style="min-width:1300px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pb-1">
+                        <p class="lead text-primary"> 
+                            Acknowledgement
+                        </p>
+                    </div>        
+                    <hr class="my-1"/>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-md-12">
+                    <div class="card border-primary h-100">
+                        <div class="card-body d-flex flex-column align-items-start ">
+                            Yusong Wu, Ke chen, Tianyu Zhang are opensource contributors to LAION projects. <br>
+                            Our codebase is build on following open-source projects: 
+                            <a href="https://github.com/qiuqiangkong/audioset_tagging_cnn">(1) PANN</a>
+                            <a href="https://github.com/RetroCirce/HTS-Audio-Transformer">(2) HTSAT</a>
+                            <a href="https://github.com/mlfoundations/open_clip">(3) open-clip</a>
+                            <a href="https://pytorch.org/">(4) PyTorch</a>
+                            We would like to thank the support of computation infrastructure from LAION, Stability.ai and Summit cluster from Oak Ridge National Laboratory. 
+                            We would like to thank [TODO, real name] Christoph, Richard, rom, Irina, as this project would not be possible without them. 
+                            We would like to thank all the community contributors for contributing the collection of LAION-630k dataset. 
+                            Those community contributors include but not limited to: [TODO Yuchen]. We would like to thank Xinhao Mei for explaining and helping on retrieval metrics.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+    <footer id="footer" class="bg-dark text-light py-5">
+    </footer> 
+<script src="config/jquery.min.js"></script>
+<script src="config/popper.min.js"></script>
+<script src="config/bootstrap.min.js"></script>
+<script src="config/scripts.js"></script>
+</body>
+</html>
