@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Singing Voice Synthesis Demos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="config/bootstrap.min.css" />
+    <link rel="stylesheet" href="config/ionicons.css" />
+    <link rel="stylesheet" href="config/theme.css" />
+    <link rel="stylesheet" href="config/template3.css" />
+  </head>
+<body data-spy="scroll" data-target="#navbar1" data-offset="60">
+<div class="container-fluid" style="min-width:1300px;">
+    <div class="row">
+        <div class="col-12 p-0 bg-primary vh-40 py-5">
+            <div class="container" style="min-width:1300px;">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 py-2 text-light">
+                        <h2 class="display-5 mb-3">
+                            Singing Voice Synthesis via Deep Learning Architectures
+                        </h2>
+
+                        <h4>
+                            Jun Wang, Ke Chen
+                        </h4>
+                        <p class="lead mb-3">
+                            In this demo page, we present five pieces of singing voice synthesized from our deep learning model, for 203B course. <br>
+                            The left column shows the orginal singing voice sung by a professional female singer, in Children's Song Dataset. <br>
+                            The middle column shows the inverse of the mel-spectrogram, via the Hifi-GAN model, as the groundtruth of our training target. <br>
+                            The right column shows our synthesis result, compared with the middle column samples, we did a good synthesis by minimizing the mel-spectrogram L1-Norm loss, details are shown in the report. <br>
+                            However, the inverse of the mel-spectrogram by Hifi-GAN does not perform well as we can see there are many alising and pizzing sounds even between the left sapmles and middle samples. <br>
+                            Therefore, one of the future work is to tune the Hifi-GAN to a more accuracte stage and by doing this, we can have better synthesis quality. <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary" id="navbar1">
+    <div class="container" style="min-width:1300px;">
+        <a class="navbar-brand mr-1 mb-1 mt-0" href="#">Demo Page</a>
+    </div>  
+</nav> 
+<main>
+    <section id="synthesis demo" class="pb-1">
+        <div class="container" style="min-width:1300px;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pb-1">
+                        <p class="lead text-primary"> 
+                            Singing Voice Synthesis Demos: 
+                        </p>
+                    </div>        
+                    <hr class="my-1"/>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-md-12">
+                    <div class="card border-primary h-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <div class="row w-100 text-center">
+                                <div class="col">
+                                    <span class = "my-auto">Demo</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Original Waveform</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Groundtruth (Inversed by Hifi-GAN)</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Synthesis Waveform (Ours)</span>
+                                </div>
+                            </div>
+
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <span class = "my-auto">#1:</span>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/synthesis/1/en001a0001.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/synthesis/1/[en001a0001][G]a b c d e f g-0319_CSD_fs_midi.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/synthesis/1/[en001a0001][P]a b c d e f g-0319_CSD_fs_midi.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <span class = "my-auto">#1:</span>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/synthesis/2/en001a0003.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/synthesis/2/[en001a0003][G]q r s t u v-0319_CSD_fs_midi.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/synthesis/2/[en001a0003][P]q r s t u v-0319_CSD_fs_midi.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <span class = "my-auto">#1:</span>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/synthesis/3/en002b0014.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/synthesis/3/[en002b0014][G]him whose birth the angels sing-0319_CSD_fs_midi.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/synthesis/3/[en002b0014][P]him whose birth the angels sing-0319_CSD_fs_midi.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <span class = "my-auto">#1:</span>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/synthesis/4/en001b0001.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/synthesis/4/[en001b0001][G]a b c d e f g-0319_CSD_fs_midi.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/synthesis/4/[en001b0001][P]a b c d e f g-0319_CSD_fs_midi.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <span class = "my-auto">#1:</span>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/synthesis/5/en002b0013.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/synthesis/5/[en002b0013][G]come to bethlehem and see-0319_CSD_fs_midi.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/synthesis/5/[en002b0013][P]come to bethlehem and see-0319_CSD_fs_midi.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+</main>
+    <footer id="footer" class="bg-dark text-light py-5">
+    </footer> 
+<script src="config/jquery.min.js"></script>
+<script src="config/popper.min.js"></script>
+<script src="config/bootstrap.min.js"></script>
+<script src="config/scripts.js"></script>
+</body>
+</html>
