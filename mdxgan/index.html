@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>MDX-GAN Demo</title>
+    <title>MDX-GAN Appendix</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="config/bootstrap.min.css" />
     <link rel="stylesheet" href="config/ionicons.css" />
@@ -10,18 +10,20 @@
     <link rel="stylesheet" href="config/template3.css" />
   </head>
 <body data-spy="scroll" data-target="#navbar1" data-offset="60">
-<div class="container-fluid" style="min-width:1300px;">
+<div class="container-fluid" style="min-width:88%;">
     <div class="row">
-        <div class="col-12 p-0 bg-primary vh-40 py-5">
-            <div class="container" style="min-width:1300px;">
+        <div class="col-12 p-0 bg-primary vh-40 py-3">
+            <div class="container" style="min-width:88%;">
                 <div class="row">
-                    <div class="col-xl-12 col-lg-12 py-2 text-light">
+                    <div class="col-xl-12 col-lg-12 py-1 text-light">
                         <h2 class="display-5 mb-3">
                             MDX-GAN: Enhancing Perceptual Quality in Multi-Class Source Separation via Adversarial Training
                         </h2>
                         <p class="lead mb-3">
-                            In this demo page, we present the demos for MDX-GAN.
-                            </vr>
+                            In this appendix, we present the separation demos and additional experiment results of MDX-GAN. <br>
+                            (1) We present the separation demos of MDX-GAN and compare it with previous baselines over ten-class sound events. <br>
+                            (2) We provide additional experiment results, namely the per-class SDR and SI-SDR results on the validation and evaluation sets. <br>
+                            Please wait for all demos to be loaded, it might take some time. 
                         </p>
                     </div>
                 </div>
@@ -30,18 +32,18 @@
     </div>
 </div>
 <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary" id="navbar1">
-    <div class="container" style="min-width:1300px;">
-        <a class="navbar-brand mr-1 mb-1 mt-0" href="#">Demo Page</a>
+    <div class="container" style="min-width:90%;">
+        <a class="navbar-brand mr-1 mb-1 mt-0" href="#">Appendix Page</a>
     </div>  
 </nav> 
 <main>
-    <!-- <section id="synthesis demo" class="pb-1">
-        <div class="container" style="min-width:1300px;">
+    <section id="separation applause" class="pb-1" >
+        <div class="container" style="min-width:88%;">
             <div class="row">
                 <div class="col-md-12">
                     <div class="pb-1">
                         <p class="lead text-primary"> 
-                            Synthesized Choral Music Dataset Demos: 
+                            Separation Demos - Applause: 
                         </p>
                     </div>        
                     <hr class="my-1"/>
@@ -53,919 +55,969 @@
                         <div class="card-body d-flex flex-column align-items-start">
                             <div class="row w-100 text-center">
                                 <div class="col">
-                                    <span class = "my-auto">Demo</span>
+                                    <span class = "my-auto">Mixture</span>
                                 </div>
                                 <div class="col">
-                                    <span class = "my-auto">SoundFont-Synthesis</span>
+                                    <span class = "my-auto">SpecUNet Separation</span>
                                 </div>
                                 <div class="col">
-                                    <span class = "my-auto">Standard-Vocal (Ours)</span>
+                                    <span class = "my-auto">ResUNet Separation</span>
                                 </div>
                                 <div class="col">
-                                    <span class = "my-auto">Expressive-Vocal-Vowel (Ours)</span>
-                                </div>
-                                <div class="col">
-                                    <span class = "my-auto">Expressive-Vocal-Word (Ours)</span>
+                                    <span class = "my-auto">MDXNet-Time Separation</span>
                                 </div>
                             </div>
 
-                            <div class="row w-100 text-center">   
-                                <div class="col my-auto">
-                                    <span class = "my-auto">#1:</span>
-                                </div>
+                            <div class="row w-100 text-center my-3">   
                                 <div class="col my-auto">
                                     <audio controls style="width:100%;">
-                                        <source src="files/synthesis/1_sf.mp3" type="audio/mpeg">
+                                        <source src="files/applause/applause_Mixture_f10-u8.wav" type="audio/mpeg">
                                         Your browser does not support the audio.
                                     </audio>
                                 </div>
                                 <div class="col my-auto">
                                     <audio controls style="width:100%;">
-                                        <source src="files/synthesis/1_vor_standard.mp3" type="audio/mpeg">
+                                        <source src="files/applause/applause_SpecUNet_f10-u8.wav" type="audio/mpeg">
                                         Your browser does not support the audio.
                                     </audio>
                                 </div>
                                 <div class="col my-auto">
                                     <audio controls style="width:100%;">
-                                        <source src="files/synthesis/1_vor_exp_vowel.mp3" type="audio/mpeg">
+                                        <source src="files/applause/applause_ResUNet_f10-u8.wav" type="audio/mpeg">
                                         Your browser does not support the audio.
                                     </audio>
                                 </div>
                                 <div class="col my-auto">
                                     <audio controls style="width:100%;">
-                                        <source src="files/synthesis/1_vor_exp_word.mp3" type="audio/mpeg">
+                                        <source src="files/applause/applause_MDX-Time_f10-u8.wav" type="audio/mpeg">
                                         Your browser does not support the audio.
                                     </audio>
                                 </div>
                             </div> 
                             <div class="row w-100 text-center">   
                                 <div class="col my-auto">
-                                    <span class = "my-auto">#2:</span>
+                                    <img style="margin-left:-1.5rem;" src="files/applause/applause_Mixture_f10-u8.png" width="100%">
                                 </div>
                                 <div class="col my-auto">
-                                    <audio controls style="width:100%;">
-                                        <source src="files/synthesis/2_sf.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio.
-                                    </audio>
-                                </div>
-                                <div class="col my-auto">
-                                    <audio controls style="width:100%;">
-                                        <source src="files/synthesis/2_vor_standard.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio.
-                                    </audio>
-                                </div>
-                                <div class="col my-auto">
-                                    <audio controls style="width:100%;">
-                                        <source src="files/synthesis/2_vor_exp_vowel.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio.
-                                    </audio>
-                                </div>
-                                <div class="col my-auto">
-                                    <audio controls style="width:100%;">
-                                        <source src="files/synthesis/2_vor_exp_word.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio.
-                                    </audio>
+                                    <img style="margin-left:-1.5rem;" src="files/applause/applause_SpecUNet_f10-u8.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/applause/applause_ResUNet_f10-u8.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/applause/applause_MDX-Time_f10-u8.png" width="100%">
                                 </div>
                             </div> 
-                            <div class="row w-100 text-center">   
-                                <div class="col my-auto">
-                                    <span class = "my-auto">#3:</span>
+                            
+                            <div class="row w-100 text-center my-3">
+                                <div class="col">
+                                    <span class = "my-auto mx-5">Separation Ground-Truth</span>
                                 </div>
-                                <div class="col my-auto">
-                                    <audio controls style="width:100%;">
-                                        <source src="files/synthesis/3_sf.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio.
-                                    </audio> 
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Spec Separation</span>
                                 </div>
-                                <div class="col my-auto">
-                                    <audio controls style="width:100%;">
-                                        <source src="files/synthesis/3_vor_standard.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio.
-                                    </audio>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-GAN Separation <b>(proposed)</b></span>
                                 </div>
-                                <div class="col my-auto">
-                                    <audio controls style="width:100%;">
-                                        <source src="files/synthesis/3_vor_exp_vowel.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio.
-                                    </audio>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Post Separation <b>(proposed)</b></span>
                                 </div>
-                                <div class="col my-auto">
-                                    <audio controls style="width:100%;">
-                                        <source src="files/synthesis/3_vor_exp_word.mp3" type="audio/mpeg">
-                                        Your browser does not support the audio.
-                                    </audio>
-                                </div>
-                            </div> 
-
                             </div>
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/applause/applause_Groundtruth_f10-u8.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/applause/applause_MDX-Spec_f10-u8.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/applause/applause_MDX-GAN_f10-u8.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/applause/applause_MDX-POST_f10-u8.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/applause/applause_Groundtruth_f10-u8.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/applause/applause_MDX-Spec_f10-u8.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/applause/applause_MDX-GAN_f10-u8.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/applause/applause_MDX-POST_f10-u8.png" width="100%">
+                                </div>
+                            </div> 
+                            
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-md-12">
+                    <div class="card border-primary h-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <div class="row w-100 text-center">
+                                <div class="col">
+                                    <span class = "my-auto">Mixture</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">SpecUNet Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">ResUNet Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Time Separation</span>
+                                </div>
+                            </div>
+
+                            <div class="row w-100 text-center my-3">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/applause/applause_Mixture_m10-u9.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/applause/applause_SpecUNet_m10-u9.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/applause/applause_ResUNet_m10-u9.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/applause/applause_MDX-Time_m10-u9.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/applause/applause_Mixture_m10-u9.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/applause/applause_SpecUNet_m10-u9.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/applause/applause_ResUNet_m10-u9.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/applause/applause_MDX-Time_m10-u9.png" width="100%">
+                                </div>
+                            </div> 
+                            
+                            <div class="row w-100 text-center my-3">
+                                <div class="col">
+                                    <span class = "my-auto mx-5">Separation Ground-Truth</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Spec Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-GAN Separation <b>(proposed)</b></span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Post Separation <b>(proposed)</b></span>
+                                </div>
+                            </div>
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/applause/applause_Groundtruth_m10-u9.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/applause/applause_MDX-Spec_m10-u9.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/applause/applause_MDX-GAN_m10-u9.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/applause/applause_MDX-POST_m10-u9.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/applause/applause_Groundtruth_m10-u9.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/applause/applause_MDX-Spec_m10-u9.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/applause/applause_MDX-GAN_m10-u9.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/applause/applause_MDX-POST_m10-u9.png" width="100%">
+                                </div>
+                            </div> 
+                            
+                    </div>
+                </div>
+            </div>
+            </div>
     </section>
-            <section id="short demo" class="pb-1">
-            <div class="container" style="min-width:1300px;">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="pb-1">
-                            <p class="lead text-primary"> 
-                                Short Separation Demos (from Bach and Barbershop Collection Dataset):
-                            </p>
-                        </div>        
-                        <hr class="my-1"/>
-                    </div>
+
+    <section id="separation alarm" class="pb-1">
+        <div class="container" style="min-width:88%;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pb-1">
+                        <p class="lead text-primary"> 
+                            Separation Demos - Alarm: 
+                        </p>
+                    </div>        
+                    <hr class="my-1"/>
                 </div>
-                <div class="row my-3">
-                    <div class="col-md-12">
-                        <div class="card border-primary h-100">
-                            <div class="card-body d-flex flex-column align-items-start">
-                                <h4 class="card-title text-primary">Demo #1</h4>
-                                <div class="row mx-auto mb-4">
-                                    <span class = "mr-2 my-auto">Mixture:</span>
-                                    <audio controls>
-                                        <source src="files/separation/bbc_1_mix.mp3" type="audio/mpeg">
+            </div>
+            <div class="row my-3">
+                <div class="col-md-12">
+                    <div class="card border-primary h-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <div class="row w-100 text-center">
+                                <div class="col">
+                                    <span class = "my-auto">Mixture</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">SpecUNet Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">ResUNet Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Time Separation</span>
+                                </div>
+                            </div>
+
+                            <div class="row w-100 text-center my-3">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/alarm/alarm_Mixture_f10-u1.wav" type="audio/mpeg">
                                         Your browser does not support the audio.
                                     </audio>
                                 </div>
-                                <div class="row w-100 text-center">
-                                    <div class="col">
-                                        <span class = "my-auto">Voice</span>
-                                    </div>
-                                    <div class="col">
-                                        <span class = "my-auto">References</span>
-                                    </div>
-                                    <div class="col">
-                                        <span class = "my-auto">Non-dataset Pretrained</span>
-                                    </div>
-                                    <div class="col">
-                                        <span class = "my-auto">SoundFont-Synthesis Pretrained</span>
-                                    </div>
-                                    <div class="col">
-                                        <span class = "my-auto">Expressive-Vocal Pretrained (ours)</span>
-                                    </div>
-                                </div>
-
-                                <div class="row w-100 text-center">   
-                                    <div class="col my-auto">
-                                        <span class = "my-auto">Soprano:</span>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_1_s_ans.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_1_s_none.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_1_s_syn.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_1_s_our.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                </div> 
-
-                                <div class="row w-100 text-center">   
-                                    <div class="col my-auto">
-                                        <span class = "my-auto">Alto:</span>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_1_a_ans.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_1_a_none.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_1_a_syn.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_1_a_our.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                </div> 
-                                
-                                <div class="row w-100 text-center">   
-                                    <div class="col my-auto">
-                                        <span class = "my-auto">Tenor:</span>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_1_t_ans.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_1_t_none.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_1_t_syn.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_1_t_our.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                </div> 
-
-                                <div class="row w-100 text-center">   
-                                    <div class="col my-auto">
-                                        <span class = "my-auto">Bass:</span>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_1_b_ans.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_1_b_none.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_1_b_syn.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_1_b_our.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row my-3">
-                    <div class="col-md-12">
-                        <div class="card border-primary h-100">
-                            <div class="card-body d-flex flex-column align-items-start">
-                                <h4 class="card-title text-primary">Demo #2</h4>
-                                <div class="row mx-auto mb-4">
-                                    <span class = "mr-2 my-auto">Mixture:</span>
-                                    <audio controls>
-                                        <source src="files/separation/bbc_2_mix.mp3" type="audio/mpeg">
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/alarm/alarm_SpecUNet_f10-u1.wav" type="audio/mpeg">
                                         Your browser does not support the audio.
                                     </audio>
                                 </div>
-                                <div class="row w-100 text-center">
-                                    <div class="col">
-                                        <span class = "my-auto">Voice</span>
-                                    </div>
-                                    <div class="col">
-                                        <span class = "my-auto">References</span>
-                                    </div>
-                                    <div class="col">
-                                        <span class = "my-auto">Non-dataset Pretrained</span>
-                                    </div>
-                                    <div class="col">
-                                        <span class = "my-auto">SoundFont-Synthesis Pretrained</span>
-                                    </div>
-                                    <div class="col">
-                                        <span class = "my-auto">Expressive-Vocal Pretrained (ours)</span>
-                                    </div>
-                                </div>
-
-                                <div class="row w-100 text-center">   
-                                    <div class="col my-auto">
-                                        <span class = "my-auto">Soprano:</span>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_2_s_ans.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_2_s_none.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_2_s_syn.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_2_s_our.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                </div> 
-
-                                <div class="row w-100 text-center">   
-                                    <div class="col my-auto">
-                                        <span class = "my-auto">Alto:</span>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_2_a_ans.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_2_a_none.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_2_a_syn.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_2_a_our.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                </div> 
-                                
-                                <div class="row w-100 text-center">   
-                                    <div class="col my-auto">
-                                        <span class = "my-auto">Tenor:</span>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_2_t_ans.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_2_t_none.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_2_t_syn.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_2_t_our.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                </div> 
-
-                                <div class="row w-100 text-center">   
-                                    <div class="col my-auto">
-                                        <span class = "my-auto">Bass:</span>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_2_b_ans.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_2_b_none.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_2_b_syn.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_2_b_our.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="row my-3">
-                    <div class="col-md-12">
-                        <div class="card border-primary h-100">
-                            <div class="card-body d-flex flex-column align-items-start">
-                                <h4 class="card-title text-primary">Demo #3</h4>
-                                <div class="row mx-auto mb-4">
-                                    <span class = "mr-2 my-auto">Mixture:</span>
-                                    <audio controls>
-                                        <source src="files/separation/bbc_3_mix.mp3" type="audio/mpeg">
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/alarm/alarm_ResUNet_f10-u1.wav" type="audio/mpeg">
                                         Your browser does not support the audio.
                                     </audio>
                                 </div>
-                                <div class="row w-100 text-center">
-                                    <div class="col">
-                                        <span class = "my-auto">Voice</span>
-                                    </div>
-                                    <div class="col">
-                                        <span class = "my-auto">References</span>
-                                    </div>
-                                    <div class="col">
-                                        <span class = "my-auto">Non-dataset Pretrained</span>
-                                    </div>
-                                    <div class="col">
-                                        <span class = "my-auto">SoundFont-Synthesis Pretrained</span>
-                                    </div>
-                                    <div class="col">
-                                        <span class = "my-auto">Expressive-Vocal Pretrained (ours)</span>
-                                    </div>
-                                </div>
-
-                                <div class="row w-100 text-center">   
-                                    <div class="col my-auto">
-                                        <span class = "my-auto">Soprano:</span>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_3_s_ans.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_3_s_none.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_3_s_syn.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_3_s_our.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                </div> 
-
-                                <div class="row w-100 text-center">   
-                                    <div class="col my-auto">
-                                        <span class = "my-auto">Alto:</span>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_3_a_ans.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_3_a_none.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_3_a_syn.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_3_a_our.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                </div> 
-                                
-                                <div class="row w-100 text-center">   
-                                    <div class="col my-auto">
-                                        <span class = "my-auto">Tenor:</span>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_3_t_ans.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_3_t_none.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_3_t_syn.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_3_t_our.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                </div> 
-
-                                <div class="row w-100 text-center">   
-                                    <div class="col my-auto">
-                                        <span class = "my-auto">Bass:</span>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_3_b_ans.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_3_b_none.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_3_b_syn.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_3_b_our.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row my-3">
-                    <div class="col-md-12">
-                        <div class="card border-primary h-100">
-                            <div class="card-body d-flex flex-column align-items-start">
-                                <h4 class="card-title text-primary">Demo #4</h4>
-                                <div class="row mx-auto mb-4">
-                                    <span class = "mr-2 my-auto">Mixture:</span>
-                                    <audio controls>
-                                        <source src="files/separation/bbc_4_mix.mp3" type="audio/mpeg">
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/alarm/alarm_MDX-Time_f10-u1.wav" type="audio/mpeg">
                                         Your browser does not support the audio.
                                     </audio>
                                 </div>
-                                <div class="row w-100 text-center">
-                                    <div class="col">
-                                        <span class = "my-auto">Voice</span>
-                                    </div>
-                                    <div class="col">
-                                        <span class = "my-auto">References</span>
-                                    </div>
-                                    <div class="col">
-                                        <span class = "my-auto">Non-dataset Pretrained</span>
-                                    </div>
-                                    <div class="col">
-                                        <span class = "my-auto">SoundFont-Synthesis Pretrained</span>
-                                    </div>
-                                    <div class="col">
-                                        <span class = "my-auto">Expressive-Vocal Pretrained (ours)</span>
-                                    </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/alarm/alarm_Mixture_f10-u1.png" width="100%">
                                 </div>
-
-                                <div class="row w-100 text-center">   
-                                    <div class="col my-auto">
-                                        <span class = "my-auto">Soprano:</span>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_4_s_ans.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_4_s_none.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_4_s_syn.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_4_s_our.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                </div> 
-
-                                <div class="row w-100 text-center">   
-                                    <div class="col my-auto">
-                                        <span class = "my-auto">Alto:</span>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_4_a_ans.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_4_a_none.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_4_a_syn.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_4_a_our.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                </div> 
-                                
-                                <div class="row w-100 text-center">   
-                                    <div class="col my-auto">
-                                        <span class = "my-auto">Tenor:</span>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_4_t_ans.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_4_t_none.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_4_t_syn.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_4_t_our.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                </div> 
-
-                                <div class="row w-100 text-center">   
-                                    <div class="col my-auto">
-                                        <span class = "my-auto">Bass:</span>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_4_b_ans.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_4_b_none.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_4_b_syn.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="col my-auto">
-                                        <audio controls style="width:100%;">
-                                            <source src="files/separation/bbc_4_b_our.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                </div> 
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/alarm/alarm_SpecUNet_f10-u1.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/alarm/alarm_ResUNet_f10-u1.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/alarm/alarm_MDX-Time_f10-u1.png" width="100%">
+                                </div>
+                            </div> 
+                            
+                            <div class="row w-100 text-center my-3">
+                                <div class="col">
+                                    <span class = "my-auto mx-5">Separation Ground-Truth</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Spec Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-GAN Separation <b>(proposed)</b></span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Post Separation <b>(proposed)</b></span>
+                                </div>
                             </div>
-                        </div>
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/alarm/alarm_Groundtruth_f10-u1.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/alarm/alarm_MDX-Spec_f10-u1.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/alarm/alarm_MDX-GAN_f10-u1.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/alarm/alarm_MDX-POST_f10-u1.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/alarm/alarm_Groundtruth_f10-u1.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/alarm/alarm_MDX-Spec_f10-u1.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/alarm/alarm_MDX-GAN_f10-u1.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/alarm/alarm_MDX-POST_f10-u1.png" width="100%">
+                                </div>
+                            </div> 
+                            
                     </div>
                 </div>
             </div>
-            </section>
-            <section id="long demo" class="pb-1">
-                <div class="container" style="min-width:1300px;">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="pb-1">
-                                <p class="lead text-primary"> 
-                                    Long Separation Demos (from Cantoria Dataset and Chorale Singing Dataset):
-                                </p>
-                            </div>        
-                            <hr class="my-1"/>
-                        </div>
-                    </div>
-                    <div class="row my-3">
-                        <div class="col-md-12">
-                            <div class="card border-primary h-100">
-                                <div class="card-body d-flex flex-column align-items-start">
-                                    <h4 class="card-title text-primary">Demo #1</h4>
-                                    <div class="row mx-auto mb-4">
-                                        <span class = "mr-2 my-auto">Mixture:</span>
-                                        <audio controls>
-                                            <source src="files/separation/ctd_1_mix.mp3" type="audio/mpeg">
-                                            Your browser does not support the audio.
-                                        </audio>
-                                    </div>
-                                    <div class="row w-100 text-center">
-                                        <div class="col">
-                                            <span class = "my-auto">Voice</span>
-                                        </div>
-                                        <div class="col">
-                                            <span class = "my-auto">References</span>
-                                        </div>
-                                        <div class="col">
-                                            <span class = "my-auto">Non-dataset Pretrained</span>
-                                        </div>
-                                        <div class="col">
-                                            <span class = "my-auto">SoundFont-Synthesis Pretrained</span>
-                                        </div>
-                                        <div class="col">
-                                            <span class = "my-auto">Expressive-Vocal Pretrained (ours)</span>
-                                        </div>
-                                    </div>
-    
-                                    <div class="row w-100 text-center">   
-                                        <div class="col my-auto">
-                                            <span class = "my-auto">Soprano:</span>
-                                        </div>
-                                        <div class="col my-auto">
-                                            <audio controls style="width:100%;">
-                                                <source src="files/separation/ctd_1_s_ans.mp3" type="audio/mpeg">
-                                                Your browser does not support the audio.
-                                            </audio>
-                                        </div>
-                                        <div class="col my-auto">
-                                            <audio controls style="width:100%;">
-                                                <source src="files/separation/ctd_1_s_none.mp3" type="audio/mpeg">
-                                                Your browser does not support the audio.
-                                            </audio>
-                                        </div>
-                                        <div class="col my-auto">
-                                            <audio controls style="width:100%;">
-                                                <source src="files/separation/ctd_1_s_syn.mp3" type="audio/mpeg">
-                                                Your browser does not support the audio.
-                                            </audio>
-                                        </div>
-                                        <div class="col my-auto">
-                                            <audio controls style="width:100%;">
-                                                <source src="files/separation/ctd_1_s_our.mp3" type="audio/mpeg">
-                                                Your browser does not support the audio.
-                                            </audio>
-                                        </div>
-                                    </div> 
-    
-                                    <div class="row w-100 text-center">   
-                                        <div class="col my-auto">
-                                            <span class = "my-auto">Alto:</span>
-                                        </div>
-                                        <div class="col my-auto">
-                                            <audio controls style="width:100%;">
-                                                <source src="files/separation/ctd_1_a_ans.mp3" type="audio/mpeg">
-                                                Your browser does not support the audio.
-                                            </audio>
-                                        </div>
-                                        <div class="col my-auto">
-                                            <audio controls style="width:100%;">
-                                                <source src="files/separation/ctd_1_a_none.mp3" type="audio/mpeg">
-                                                Your browser does not support the audio.
-                                            </audio>
-                                        </div>
-                                        <div class="col my-auto">
-                                            <audio controls style="width:100%;">
-                                                <source src="files/separation/ctd_1_a_syn.mp3" type="audio/mpeg">
-                                                Your browser does not support the audio.
-                                            </audio>
-                                        </div>
-                                        <div class="col my-auto">
-                                            <audio controls style="width:100%;">
-                                                <source src="files/separation/ctd_1_a_our.mp3" type="audio/mpeg">
-                                                Your browser does not support the audio.
-                                            </audio>
-                                        </div>
-                                    </div> 
-                                    
-                                    <div class="row w-100 text-center">   
-                                        <div class="col my-auto">
-                                            <span class = "my-auto">Tenor:</span>
-                                        </div>
-                                        <div class="col my-auto">
-                                            <audio controls style="width:100%;">
-                                                <source src="files/separation/ctd_1_t_ans.mp3" type="audio/mpeg">
-                                                Your browser does not support the audio.
-                                            </audio>
-                                        </div>
-                                        <div class="col my-auto">
-                                            <audio controls style="width:100%;">
-                                                <source src="files/separation/ctd_1_t_none.mp3" type="audio/mpeg">
-                                                Your browser does not support the audio.
-                                            </audio>
-                                        </div>
-                                        <div class="col my-auto">
-                                            <audio controls style="width:100%;">
-                                                <source src="files/separation/ctd_1_t_syn.mp3" type="audio/mpeg">
-                                                Your browser does not support the audio.
-                                            </audio>
-                                        </div>
-                                        <div class="col my-auto">
-                                            <audio controls style="width:100%;">
-                                                <source src="files/separation/ctd_1_t_our.mp3" type="audio/mpeg">
-                                                Your browser does not support the audio.
-                                            </audio>
-                                        </div>
-                                    </div> 
-    
-                                    <div class="row w-100 text-center">   
-                                        <div class="col my-auto">
-                                            <span class = "my-auto">Bass:</span>
-                                        </div>
-                                        <div class="col my-auto">
-                                            <audio controls style="width:100%;">
-                                                <source src="files/separation/ctd_1_b_ans.mp3" type="audio/mpeg">
-                                                Your browser does not support the audio.
-                                            </audio>
-                                        </div>
-                                        <div class="col my-auto">
-                                            <audio controls style="width:100%;">
-                                                <source src="files/separation/ctd_1_b_none.mp3" type="audio/mpeg">
-                                                Your browser does not support the audio.
-                                            </audio>
-                                        </div>
-                                        <div class="col my-auto">
-                                            <audio controls style="width:100%;">
-                                                <source src="files/separation/ctd_1_b_syn.mp3" type="audio/mpeg">
-                                                Your browser does not support the audio.
-                                            </audio>
-                                        </div>
-                                        <div class="col my-auto">
-                                            <audio controls style="width:100%;">
-                                                <source src="files/separation/ctd_1_b_our.mp3" type="audio/mpeg">
-                                                Your browser does not support the audio.
-                                            </audio>
-                                        </div>
-                                    </div> 
+            </div>
+
+            <div class="row my-5">
+                <div class="col-md-12">
+                    <div class="card border-primary h-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <div class="row w-100 text-center">
+                                <div class="col">
+                                    <span class = "my-auto">Mixture</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">SpecUNet Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">ResUNet Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Time Separation</span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-    
-                    
-                   
+
+                            <div class="row w-100 text-center my-3">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/alarm/alarm_Mixture_m10-u8.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/alarm/alarm_SpecUNet_m10-u8.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/alarm/alarm_ResUNet_m10-u8.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/alarm/alarm_MDX-Time_m10-u8.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/alarm/alarm_Mixture_m10-u8.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/alarm/alarm_SpecUNet_m10-u8.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/alarm/alarm_ResUNet_m10-u8.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/alarm/alarm_MDX-Time_m10-u8.png" width="100%">
+                                </div>
+                            </div> 
+                            
+                            <div class="row w-100 text-center my-3">
+                                <div class="col">
+                                    <span class = "my-auto mx-5">Separation Ground-Truth</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Spec Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-GAN Separation <b>(proposed)</b></span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Post Separation <b>(proposed)</b></span>
                                 </div>
                             </div>
-                        </div>
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/alarm/alarm_Groundtruth_m10-u8.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/alarm/alarm_MDX-Spec_m10-u8.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/alarm/alarm_MDX-GAN_m10-u8.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/alarm/alarm_MDX-POST_m10-u8.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/alarm/alarm_Groundtruth_m10-u8.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/alarm/alarm_MDX-Spec_m10-u8.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/alarm/alarm_MDX-GAN_m10-u8.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/alarm/alarm_MDX-POST_m10-u8.png" width="100%">
+                                </div>
+                            </div> 
+                            
                     </div>
                 </div>
-            </section> -->
+            </div>
+            </div>
+    </section>
+
+    <section id="separation bird" class="pb-1">
+        <div class="container" style="min-width:88%;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pb-1">
+                        <p class="lead text-primary"> 
+                            Separation Demos - Bird: 
+                        </p>
+                    </div>        
+                    <hr class="my-1"/>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-md-12">
+                    <div class="card border-primary h-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <div class="row w-100 text-center">
+                                <div class="col">
+                                    <span class = "my-auto">Mixture</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">SpecUNet Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">ResUNet Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Time Separation</span>
+                                </div>
+                            </div>
+
+                            <div class="row w-100 text-center my-3">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/bird/bird_Mixture_f10-u3.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/bird/bird_SpecUNet_f10-u3.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/bird/bird_ResUNet_f10-u3.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/bird/bird_MDX-Time_f10-u3.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/bird/bird_Mixture_f10-u3.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/bird/bird_SpecUNet_f10-u3.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/bird/bird_ResUNet_f10-u3.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/bird/bird_MDX-Time_f10-u3.png" width="100%">
+                                </div>
+                            </div> 
+                            
+                            <div class="row w-100 text-center my-3">
+                                <div class="col">
+                                    <span class = "my-auto mx-5">Separation Ground-Truth</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Spec Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-GAN Separation <b>(proposed)</b></span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Post Separation <b>(proposed)</b></span>
+                                </div>
+                            </div>
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/bird/bird_Groundtruth_f10-u3.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/bird/bird_MDX-Spec_f10-u3.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/bird/bird_MDX-GAN_f10-u3.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/bird/bird_MDX-POST_f10-u3.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/bird/bird_Groundtruth_f10-u3.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/bird/bird_MDX-Spec_f10-u3.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/bird/bird_MDX-GAN_f10-u3.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/bird/bird_MDX-POST_f10-u3.png" width="100%">
+                                </div>
+                            </div> 
+                            
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-md-12">
+                    <div class="card border-primary h-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <div class="row w-100 text-center">
+                                <div class="col">
+                                    <span class = "my-auto">Mixture</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">SpecUNet Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">ResUNet Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Time Separation</span>
+                                </div>
+                            </div>
+
+                            <div class="row w-100 text-center my-3">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/bird/bird_Mixture_m10-u3.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/bird/bird_SpecUNet_m10-u3.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/bird/bird_ResUNet_m10-u3.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/bird/bird_MDX-Time_m10-u3.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/bird/bird_Mixture_m10-u3.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/bird/bird_SpecUNet_m10-u3.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/bird/bird_ResUNet_m10-u3.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/bird/bird_MDX-Time_m10-u3.png" width="100%">
+                                </div>
+                            </div> 
+                            
+                            <div class="row w-100 text-center my-3">
+                                <div class="col">
+                                    <span class = "my-auto mx-5">Separation Ground-Truth</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Spec Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-GAN Separation <b>(proposed)</b></span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Post Separation <b>(proposed)</b></span>
+                                </div>
+                            </div>
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/bird/bird_Groundtruth_m10-u3.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/bird/bird_MDX-Spec_m10-u3.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/bird/bird_MDX-GAN_m10-u3.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/bird/bird_MDX-POST_m10-u3.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/bird/bird_Groundtruth_m10-u3.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/bird/bird_MDX-Spec_m10-u3.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/bird/bird_MDX-GAN_m10-u3.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/bird/bird_MDX-POST_m10-u3.png" width="100%">
+                                </div>
+                            </div> 
+                            
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section id="separation cough" class="pb-1">
+        <div class="container" style="min-width:88%;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pb-1">
+                        <p class="lead text-primary"> 
+                            Separation Demos - Cough: 
+                        </p>
+                    </div>        
+                    <hr class="my-1"/>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-md-12">
+                    <div class="card border-primary h-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <div class="row w-100 text-center">
+                                <div class="col">
+                                    <span class = "my-auto">Mixture</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">SpecUNet Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">ResUNet Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Time Separation</span>
+                                </div>
+                            </div>
+
+                            <div class="row w-100 text-center my-3">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/cough/cough_Mixture_f10-u9.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/cough/cough_SpecUNet_f10-u9.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/cough/cough_ResUNet_f10-u9.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/cough/cough_MDX-Time_f10-u9.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/cough/cough_Mixture_f10-u9.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/cough/cough_SpecUNet_f10-u9.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/cough/cough_ResUNet_f10-u9.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/cough/cough_MDX-Time_f10-u9.png" width="100%">
+                                </div>
+                            </div> 
+                            
+                            <div class="row w-100 text-center my-3">
+                                <div class="col">
+                                    <span class = "my-auto mx-5">Separation Ground-Truth</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Spec Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-GAN Separation <b>(proposed)</b></span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Post Separation <b>(proposed)</b></span>
+                                </div>
+                            </div>
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/cough/cough_Groundtruth_f10-u9.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/cough/cough_MDX-Spec_f10-u9.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/cough/cough_MDX-GAN_f10-u9.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/cough/cough_MDX-POST_f10-u9.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/cough/cough_Groundtruth_f10-u9.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/cough/cough_MDX-Spec_f10-u9.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/cough/cough_MDX-GAN_f10-u9.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/cough/cough_MDX-POST_f10-u9.png" width="100%">
+                                </div>
+                            </div> 
+                            
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="row my-5">
+                <div class="col-md-12">
+                    <div class="card border-primary h-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <div class="row w-100 text-center">
+                                <div class="col">
+                                    <span class = "my-auto">Mixture</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">SpecUNet Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">ResUNet Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Time Separation</span>
+                                </div>
+                            </div>
+
+                            <div class="row w-100 text-center my-3">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/cough/cough_Mixture_m10-u7.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/cough/cough_SpecUNet_m10-u7.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/cough/cough_ResUNet_m10-u7.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/cough/cough_MDX-Time_m10-u7.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/cough/cough_Mixture_m10-u7.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/cough/cough_SpecUNet_m10-u7.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/cough/cough_ResUNet_m10-u7.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/cough/cough_MDX-Time_m10-u7.png" width="100%">
+                                </div>
+                            </div> 
+                            
+                            <div class="row w-100 text-center my-3">
+                                <div class="col">
+                                    <span class = "my-auto mx-5">Separation Ground-Truth</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Spec Separation</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-GAN Separation <b>(proposed)</b></span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">MDXNet-Post Separation <b>(proposed)</b></span>
+                                </div>
+                            </div>
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/cough/cough_Groundtruth_m10-u7.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/cough/cough_MDX-Spec_m10-u7.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/cough/cough_MDX-GAN_m10-u7.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/cough/cough_MDX-POST_m10-u7.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/cough/cough_Groundtruth_m10-u7.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/cough/cough_MDX-Spec_m10-u7.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/cough/cough_MDX-GAN_m10-u7.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/cough/cough_MDX-POST_m10-u7.png" width="100%">
+                                </div>
+                            </div> 
+                            
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    
 
 </main>
     <footer id="footer" class="bg-dark text-light py-5">
