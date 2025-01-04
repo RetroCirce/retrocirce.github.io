@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>USS-SEP Appendix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="config/bootstrap.min.css" />
+    <link rel="stylesheet" href="config/ionicons.css" />
+    <link rel="stylesheet" href="config/theme.css" />
+    <link rel="stylesheet" href="config/template3.css" />
+  </head>
+<body data-spy="scroll" data-target="#navbar1" data-offset="60">
+<div class="container-fluid" style="min-width:88%;">
+    <div class="row">
+        <div class="col-12 p-0 bg-primary vh-40 py-3">
+            <div class="container" style="min-width:88%;">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 py-1 text-light">
+                        <h2 class="display-5 mb-3">
+                            USS-SEP: Computational Auditory Scene Analysis with Weakly Labelled Data
+                        </h2>
+                        <p class="lead mb-3">
+                            In this demo page, we present the separation demos of USS-SEP. <br>
+                            Specifically, we present the separation demos of two movie trailers in hierarchical separation levels. <br>
+                            The website may take some time to load all audio files because they are very large.
+                            We recommend to use the headphone to listen to these demos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary" id="navbar1">
+    <div class="container" style="min-width:90%;">
+        <a class="navbar-brand mr-1 mb-1 mt-0" href="#">Appendix Page</a>
+    </div>  
+</nav> 
+<main>
+    <section id="separation applause" class="pb-1" >
+        <div class="container" style="min-width:88%;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="pb-1">
+                        <p class="lead text-primary"> 
+                            Separation Demos - Harry Potter: 
+                        </p>
+                    </div>        
+                    <hr class="my-1"/>
+                </div>
+            </div>
+            <div class="row my-3 mx-1">
+                <p>
+                    In this example, we separate the source samples into three separationg levels.  
+                </p>
+                <p>
+                    The first level contains 5 categories, the second level contains 8 categories, and the third level contains 12 categories. The visualization of them is depicted below:
+                </p>
+                <div>
+                    <img class="px-1" src="files/harry_potter/plot.png" width="50%">
+                    <iframe style="vertical-align:middle" class="px-1" width="45%" height= "80%%" src="https://www.youtube.com/embed/VyHV0BRtdxo?si=H8Kl_LxFcp6vtys6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                
+                
+            </div>
+            <div class="row my-3">
+                <div class="col-md-12">
+                    <div class="card border-primary h-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <div class="row w-100 text-center">
+                                <div class="col">
+                                    <span class = "my-auto">Animal</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Human Sounds</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Music</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Sounds of Things</span>
+                                </div>
+                            </div>
+
+                            <div class="row w-100 text-center my-3">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=1/Animal.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=1/Human sounds.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=1/Music.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=1/Sounds of things.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=1/Animal.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=1/Human sounds.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=1/Music.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=1/Sounds of things.png" width="100%">
+                                </div>
+                            </div> 
+
+                            <div class="row w-100 text-center">
+                                <div class="col">
+                                    <span class = "my-auto">Source-Ambiguous Sounds</span>
+                                </div>
+                                <div class="col">
+                                    <!-- <span class = "my-auto">Human Sounds</span> -->
+                                </div>
+                                <div class="col">
+                                    <!-- <span class = "my-auto">Music</span> -->
+                                </div>
+                                <div class="col">
+                                    <!-- <span class = "my-auto">Sounds of Things</span> -->
+                                </div>
+                            </div>
+
+                            <div class="row w-100 text-center my-3">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=1/Source-ambiguous sounds.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <!-- <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=1/Human sounds.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio> -->
+                                </div>
+                                <div class="col my-auto">
+                                    <!-- <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=1/Music.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio> -->
+                                </div>
+                                <div class="col my-auto">
+                                    <!-- <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=1/Sounds of things.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio> -->
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=1/Source-ambiguous sounds.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <!-- <img style="margin-left:-1.5rem;" src="files/harry_potter/level=1/Human sounds.png" width="100%"> -->
+                                </div>
+                                <div class="col my-auto">
+                                    <!-- <img style="margin-left:-1.5rem;" src="files/harry_potter/level=1/Music.png" width="100%"> -->
+                                </div>
+                                <div class="col my-auto">
+                                    <!-- <img style="margin-left:-1.5rem;" src="files/harry_potter/level=1/Sounds of things.png" width="100%"> -->
+                                </div>
+                            </div> 
+                            
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="row my-3">
+                <div class="col-md-12">
+                    <div class="card border-primary h-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <div class="row w-100 text-center">
+                                <div class="col">
+                                    <span class = "my-auto">Generic Impact Sounds</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Human Group Actions</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Human Voice</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Music Mood</span>
+                                </div>
+                            </div>
+
+                            <div class="row w-100 text-center my-3">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=2/Generic impact sounds.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=2/Human group actions.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=2/Human voice.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=2/Music mood.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=2/Generic impact sounds.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=2/Human group actions.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=2/Human voice.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=2/Music mood.png" width="100%">
+                                </div>
+                            </div> 
+
+                            <div class="row w-100 text-center">
+                                <div class="col">
+                                    <span class = "my-auto">Music Role</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Musical Instrument</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Vehicle</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Wild Animals</span>
+                                </div>
+                            </div>
+
+                            <div class="row w-100 text-center my-3">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=2/Music role.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=2/Musical instrument.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=2/Vehicle.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=2/Wild animals.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=2/Music role.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=2/Musical instrument.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=2/Vehicle.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=2/Wild animals.png" width="100%">
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+
+            <div class="row my-5">
+                <div class="col-md-12">
+                    <div class="card border-primary h-100">
+                        <div class="card-body d-flex flex-column align-items-start">
+                            <div class="row w-100 text-center">
+                                <div class="col">
+                                    <span class = "my-auto">Bell</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Bird</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Brass Instrument</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Chatter</span>
+                                </div>
+                            </div>
+
+                            <div class="row w-100 text-center my-3">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=3/Bell.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=3/Bird.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=3/Brass instrument.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=3/Chatter.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=3/Bell.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=3/Bird.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=3/Brass instrument.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=3/Chatter.png" width="100%">
+                                </div>
+                            </div> 
+                            
+
+                            <div class="row w-100 text-center">
+                                <div class="col">
+                                    <span class = "my-auto">Crowd</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Speech Babble</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Orchestra</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Percussion</span>
+                                </div>
+                            </div>
+
+                            <div class="row w-100 text-center my-3">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=3/Crowd.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=3/Hubbub, speech noise, speech babble.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=3/Orchestra.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=3/Percussion.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=3/Crowd.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=3/Hubbub, speech noise, speech babble.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=3/Orchestra.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=3/Percussion.png" width="100%">
+                                </div>
+                            </div> 
+                            
+                            <div class="row w-100 text-center">
+                                <div class="col">
+                                    <span class = "my-auto">Scary Music</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Smash, Crash</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Speech</span>
+                                </div>
+                                <div class="col">
+                                    <span class = "my-auto">Theme mMsic</span>
+                                </div>
+                            </div>
+
+                            <div class="row w-100 text-center my-3">   
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=3/Scary music.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=3/Smash, crash.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=3/Speech.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                                <div class="col my-auto">
+                                    <audio controls style="width:100%;">
+                                        <source src="files/harry_potter/level=3/Theme music.wav" type="audio/mpeg">
+                                        Your browser does not support the audio.
+                                    </audio>
+                                </div>
+                            </div> 
+                            <div class="row w-100 text-center">   
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=3/Scary music.png" width="100%">
+                                </div>
+                                <div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=3/Smash, crash.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=3/Speech.png" width="100%">
+                                </div><div class="col my-auto">
+                                    <img style="margin-left:-1.5rem;" src="files/harry_potter/level=3/Theme music.png" width="100%">
+                                </div>
+                            </div> 
+                            
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    
+</main>
+    <footer id="footer" class="bg-dark text-light py-5">
+    </footer> 
+<script src="config/jquery.min.js"></script>
+<script src="config/popper.min.js"></script>
+<script src="config/bootstrap.min.js"></script>
+<script src="config/scripts.js"></script>
+</body>
+</html>
