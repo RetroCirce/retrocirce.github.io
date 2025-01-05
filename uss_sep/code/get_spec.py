@@ -6,7 +6,7 @@ import os
 import librosa
 
 
-l_folder = "D:/Research/personal_website/retrocirce.github.io/uss_sep/files/harry_potter/"
+l_folder = "D:/Research/personal_website/retrocirce.github.io/uss_sep/files/animal_house/"
 subfolders = [f for f in os.listdir(l_folder) if os.path.isdir(os.path.join(l_folder, f))]
 for folder in subfolders:
     files = [f for f in os.listdir(os.path.join(l_folder, folder)) if f.endswith('.wav')]
